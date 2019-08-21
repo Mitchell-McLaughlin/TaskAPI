@@ -12,9 +12,6 @@ exports.list_all_tasks = function(req, res) {
   });
 };
 
-
-
-
 exports.create_a_task = function(req, res) {
   var new_task = new Task(req.body);
   new_task.save(function(err, task) {
@@ -23,7 +20,6 @@ exports.create_a_task = function(req, res) {
     res.json(task);
   });
 };
-
 
 exports.read_a_task = function(req, res) {
   Task.findById(req.params.taskId, function(err, task) {
