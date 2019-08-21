@@ -8,7 +8,7 @@ var express = require('express'),
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb+srv://mrmclaughli:@cluster0-abogf.mongodb.net/Test?retryWrites=true&w=majority', {useNewUrlParser: true}); 
-mongoose.connect("mongodb+srv://mmAdmin:pNgg1Wx1Qp60G6LL@cluster0-abogf.mongodb.net/Test?retryWrites=true&w=majority",{ useNewUrlParser: true });    
+mongoose.connect("mongodb+srv://mmAdmin:pNgg1Wx1Qp60G6LL@cluster0-abogf.mongodb.net/API?retryWrites=true&w=majority",{ useNewUrlParser: true });    
 
   mongoose.connection.on('error', (err) => {
     console.error(`Mongoose connection error: ${err}`);
